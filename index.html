@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>محول العملات – النمر للمعلوميات</title>
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="splash" id="splash">
+    <div class="logo">🔹 محول العملات</div>
+    <div class="txt">🔸 النمر للمعلوميات</div>
+  </div>
+
+  <div class="card" id="card" data-theme="light" style="display:none">
+    <div class="top">
+      <div class="brand">
+        <div class="app-icon" aria-hidden="true"><img src="logo.svg" alt="" style="width:64px;height:64;border-radius:12px"></div>
+        <div class="titles"><h1>محول العملات</h1><p>النمر للمعلوميات</p></div>
+      </div>
+      <div class="controls">
+        <button id="themeToggle" class="icon-btn" title="تبديل الوضع">🌙</button>
+        <button id="refreshBtn" class="icon-btn" title="تحديث الأسعار الآن">🔄</button>
+      </div>
+    </div>
+
+    <div class="note" id="note">جارٍ التحميل...</div>
+
+    <section>
+      <div class="grid">
+        <div class="field"><label for="amount">المبلغ</label><input id="amount" type="number" inputmode="decimal" step="any" value="1" min="0" /></div>
+        <div class="field"><label for="from">من</label><div class="select-wrap"><select id="from"></select><span id="flagFrom" class="flag" aria-hidden="true"></span></div></div>
+        <div class="field"><label for="to">إلى</label><div class="select-wrap"><select id="to"></select><span id="flagTo" class="flag" aria-hidden="true"></span></div></div>
+      </div>
+
+      <div class="actions"><button id="swapBtn" class="btn swap">تبديل</button><button id="convertBtn" class="btn primary">حوّل</button></div>
+
+      <div id="result" class="result" aria-live="polite"><div class="inner">جاهز — اضغط "حوّل"</div></div>
+
+      <div class="buttons-row">
+        <a id="previewLink" class="action-link preview" href="#" target="_blank" rel="noopener">👁️ معاينة مباشرة</a>
+        <a id="downloadLink" class="action-link download" href="#" download>⬇️ تحميل الحزمة</a>
+      </div>
+
+      <div class="socials"><div class="follow">تابعنا على مواقع التواصل الاجتماعي</div><div class="social-icons"><a class="fb" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="فيسبوك"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.98 3.66 9.11 8.44 9.93v-7.02H7.9v-2.91h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.62.77-1.62 1.56v1.86h2.76l-.44 2.91h-2.32V22C18.34 21.18 22 17.05 22 12.07z"/></svg></a><a class="yt" href="https://www.youtube.com/@magid_nemr" target="_blank" rel="noopener noreferrer" title="يوتيوب"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2s-.2-1.6-.8-2.3c-.8-1-1.7-1-2.1-1.1C16.9 2.5 12 2.5 12 2.5h-.1s-4.9 0-8.6.3c-.4 0-1.3.1-2.1 1.1-.6.7-.8 2.3-.8 2.3S0 8 0 9.9v2.2C0 14 0.2 15.5 0.2 15.5s.2 1.6.8 2.3c.8 1 1.9 1 2.4 1.1 1.8.2 7.4.3 7.4.3s4.9 0 8.6-.3c.4 0 1.3-.1 2.1-1.1.6-.7.8-2.3.8-2.3s.2-1.5.2-3.4v-2.2c0-1.9-.2-3.4-.2-3.4zM9.6 15.1V8.9l6.1 3.1-6.1 3.1z"/></svg></a></div></div>
+
+      <div class="footer">المصدر: <strong>open.er-api.com (latest/USD)</strong> — التحديث تلقائي يومياً عند الاتصال بالإنترنت<div class="signature">🦁 النمر للمعلوميات</div></div>
+    </section>
+ <!-- AdSense -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-5190260474611713, DIRECT, f08c47fec0942fa0"
+         data-ad-slot="XXXX"
+         data-ad-format="auto"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+<script src="script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', ()=>{
+  const splash = document.getElementById('splash');
+  const card = document.getElementById('card');
+  setTimeout(()=>{ splash.style.display='none'; card.style.display='block'; }, 1400);
+});
+</script>
+</body>
+</html>
