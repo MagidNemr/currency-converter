@@ -18,8 +18,7 @@ const swapBtn = document.getElementById('swapBtn');
 const refreshBtn = document.getElementById('refreshBtn');
 const themeToggle = document.getElementById('themeToggle');
 const note = document.getElementById('note');
-const previewLink = document.getElementById('previewLink');
-const downloadLink = document.getElementById('downloadLink');
+
 
 const c2c = {'USD':'us','EUR':'eu','GBP':'gb','EGP':'eg','SAR':'sa','AED':'ae','JPY':'jp','CNY':'cn','INR':'in','AUD':'au','CAD':'ca','CHF':'ch','TRY':'tr','RUB':'ru','BRL':'br','ZAR':'za'};
 
