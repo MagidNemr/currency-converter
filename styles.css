@@ -51,3 +51,18 @@ input[type=number],select{padding:12px;border-radius:12px;border:1px solid rgba(
 @media(max-width:760px){.grid{flex-direction:column}.select-wrap select{padding-left:56px}.app-icon{width:56px;height:56;font-size:16px;border-radius:12px}}
 .action-link::after{content:"";position:absolute;left:0;top:0;right:0;bottom:0;border-radius:50px;opacity:0;transition:opacity .25s}
 .action-link:hover::after{opacity:0.06}
+/* تصغير حجم المربع وتكبير الخط للموبايل */
+.card, .container {
+    max-width: 320px !important; /* تصغير حجم المربع الإجمالي ليناسب الموبايل */
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.action-link {
+    font-size: 20px !important; /* تكبير الخط داخل الأزرار */
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    margin: 8px 0;
+}
