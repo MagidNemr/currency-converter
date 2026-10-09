@@ -4,12 +4,12 @@
 [data-theme="light"]{--bg-start:#0c2540;--bg-end:#b8860b;--panel:rgba(255,255,255,0.85);--muted:var(--muted-light);--text:#071427}
 *{box-sizing:border-box}html,body{height:100%;margin:0;font-family:Inter, 'Noto Sans Arabic', system-ui;-webkit-font-smoothing:antialiased}
 body{display:flex;align-items:center;justify-content:center;padding:28px;background:linear-gradient(135deg,var(--bg-start),var(--bg-end));color:var(--text);transition:background .45s ease}
-.card{width:100%;max-width:550px;border-radius:18px;padding:60px 20px 20px 20px;;box-shadow:0 30px 80px rgba(2,6,23,0.35);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.04);animation:enter .7s ease;background:var(--panel)}
+.card{width:100%;max-width:920px;border-radius:18px;padding:20px;box-shadow:0 30px 80px rgba(2,6,23,0.35);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.04);animation:enter .7s ease;background:var(--panel)}
 @keyframes enter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}
 .brand{display:flex;gap:14px;align-items:center}
 .app-icon{width:72px;height:72;border-radius:16px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--navy1),var(--gold2));color:white;font-weight:900;font-size:20px;box-shadow:0 10px 30px rgba(11,16,25,0.6)}
-.titles h1{margin:0;font-size:40px}
+.titles h1{margin:0;font-size:20px}
 .titles p{margin:2px 0 0 0;color:var(--muted);font-size:13px}
 .controls{display:flex;gap:8px;align-items:center}
 .icon-btn{width:44px;height:44;border-radius:10px;border:0;background:var(--glass);display:inline-flex;align-items:center;justify-content:center;color:var(--text);cursor:pointer;transition:transform .18s,box-shadow .18s}
